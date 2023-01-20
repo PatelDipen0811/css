@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> product card</title>
+</head>
+
+ <style type="text/css">
+
+ 	*{ padding: 0px; margin:0px; box-sizing:border-box;}
+
+ 	.product  
+ 	 {
+ 	 	height: 350px;
+ 	 	width: 200px;
+ 	 	background:lightblue;
+ 	 	box-shadow:0px 0px 20px black;
+      margin: 200px auto;
+
+      position: relative;   
+ 	 }
+
+    .product .prd-img 
+     {
+ 	 	height: 250px;
+ 	 	width: 200px;
+ 	 	background:lightblue;
+ 	 	background: 100% 100%; 
+      backface-visibility: hidden;
+      transition: 1s;	
+ 	 }
+     
+     .product .view 
+     {
+ 	 	height: 50px;
+ 	 	width: 200px;
+ 	 	background:black;
+      color: white;
+ 	 	text-align: center;
+ 	 	line-height: 50px;
+
+      position: absolute;
+      top: 0px;
+      left:0px;
+
+      transition: 1s;
+      opacity: 0; 
+ 	 }
+ 	 
+ 	 .product .info 
+ 	 {
+ 	 	height:100px;
+ 	 	width: 200px;
+ 	 	background:lightblue;
+ 	 	justify-content: centre;
+ 	 	padding: 10px 20px ;
+/* 	 	margin: 10px 0px;*/
+ 	 }
+ 	  .product .info .price
+ 	  {
+ 	  	margin: 10px 0px;
+ 	  }
+
+     .product:hover .view  
+     {
+       top:200px;
+       opacity: 0.80;
+/*       color: black;*/
+
+     }
+
+     .product : hover
+     {
+      transform: rotateY(180deg);
+     }
+
+     .main 
+     {
+      
+      border: 2px solid;
+      display: flex;
+      background: black;
+      
+     }
+
+     .product span
+     {
+
+       background: darkred;
+       color: white;
+       position: absolute;
+       top: 0;
+       right: 0;  
+
+     }
+     .prd-img 
+     {
+      transform: rotateY(180deg);
+     }
+     .prd-img:hover
+     {
+      transform: rotateY(0deg);
+      transition: 1s;
+     }
+
+
+ </style>
+
+<body>
+
+          
+
+          <div class="main">
+
+           
+<!-- Product Start -->
+           <div class="product"> 
+           <span> New</span>
+
+           <div class="prd-img"> 
+           	<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%"> 
+           </div>
+           
+           <div class="view">
+             <button>Qucik view </button> </div>
+           
+           <div class="info"> 
+           	<p class="price">Formal Blue Shirt</p> 
+            <p class="price">$45.99 <del>$69.71</del></p>
+           <button> Add to cart</button>
+           </div>
+          </div>
+          <!-- Product end -->
+
+<!-- Product Start -->
+           <div class="product"> 
+           <span> New</span>
+
+           <div class="prd-img"> 
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%"> 
+           </div>
+           
+           <div class="view">
+            Qucik view </div>
+           
+           <div class="info"> 
+            <p class="price">Formal Blue Shirt</p> 
+            <p class="price">$45.99 <del>$69.71</del></p>
+           <button> Add to cart</button>
+           </div>
+          </div>
+          <!-- Product end -->
+
+<!-- Product Start -->
+           <div class="product"> 
+           <span> New</span>
+
+           <div class="prd-img"> 
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%"> 
+           </div>
+           
+           <div class="view">
+            Qucik view </div>
+           
+           <div class="info"> 
+            <p class="price">Formal Blue Shirt</p> 
+            <p class="price">$45.99 <del>$69.71</del></p>
+           <button> Add to cart</button>
+           </div>
+          </div>
+          <!-- Product end -->
+<!-- Product Start -->
+           <div class="product"> 
+           <span> New</span>
+
+           <div class="prd-img"> 
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%"> 
+           </div>
+           
+           <div class="view">
+            Qucik view </div>
+           
+           <div class="info"> 
+            <p class="price">Formal Blue Shirt</p> 
+            <p class="price">$45.99 <del>$69.71</del></p>
+           <button> Add to cart</button>
+           </div>
+          </div>
+          <!-- Product end -->
+
+          </div>
+
+
+
+
+
+</body>
+</html>

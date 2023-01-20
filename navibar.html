@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> navi bar </title>
+
+	<style type="text/css">
+              
+              *{text-decoration: none; list-style: none;}
+
+		 .nav
+		 {
+		 	height: 50px;
+		 	width: 700px;
+		 	background: lightblue;
+		 	display: flex;
+/*		 	margin: 20px;*/
+/*		 	padding: 20px;*/
+		 	justify-content: center;
+		 	position: relative;
+		 	
+
+		 }
+
+
+          a
+         {
+         	text-decoration: none;
+         	list-type: none;
+         	margin: 20px;
+
+         } 	
+
+
+         .dropdown
+         {
+         	position: relative;
+
+         }
+
+         .menu .d1
+        {
+        	display: none;
+        	position: absolute;
+        	top: -10px;
+        	left: 0px;
+
+        }
+
+        .menu:hover .d1
+        { 
+          display: block;
+          position: absolute;
+
+         }
+         
+  /*       .menu::after
+         {
+             content: ;
+
+             height: 5px;
+             width: auto;
+             background: blue;
+             transition: 1s;
+         }
+        
+        .menu::after
+        {
+        	width: 100%;
+        }
+*/
+         .dropdown::after
+         {
+         	content: "";
+         	width:0px;
+         	height: 5px;
+         	background: darkblue;
+         	top: 40px;
+         	left: 0;
+         	position: absolute;
+         	transition: 1s;
+/*         	display: none;*/
+         }
+         
+
+         .dropdown:hover::after
+         {
+         	width:100% ;
+
+         }
+
+         .a1::after
+         {
+         	content: "";
+         	width:0px;
+         	height: 5px;
+         	background: darkblue;
+         	top: 40px;
+         	left: 0;
+         	position: absolute;
+         	transition: 1s;
+/*         	display: none;*/
+         }
+         
+
+         .a1:hover::after
+         {
+         	width:100% ;
+
+         }
+
+         .a2::after
+         {
+         	content: "";
+         	width:0px;
+         	height: 5px;
+         	background: darkblue;
+         	top: 40px;
+         	left: 0;
+         	position: absolute;
+         	transition: 1s;
+/*         	display: none;*/
+         }
+         
+
+         .a2:hover::after
+         {
+         	width:100% ;
+
+         }
+
+         .a3::after
+         {
+         	content: "";
+         	width:0px;
+         	height: 5px;
+         	background: darkblue;
+         	top: 40px;
+         	left: 0;
+         	position: absolute;
+         	transition: 1s;
+/*         	display: none;*/
+         }
+         
+
+         .a3:hover::after
+         {
+         	width:100% ;
+
+         }
+
+        .a4::after
+         {
+         	content: "";
+         	width:0px;
+         	height: 5px;
+         	background: darkblue;
+         	top: 40px;
+         	left: 0;
+         	position: absolute;
+         	transition: 1s;
+/*         	display: none;*/
+         }
+         
+
+         .a4:hover::after
+         {
+         	width:100% ;
+
+         }
+
+
+
+	</style>
+
+</head>
+<body>
+	<div class="nav">
+       
+
+       
+		
+		<li class="menu a1"><a href="">home</a></li>
+		<li class="menu a2"><a href="">produt</a></li>
+		
+		<li class="menu a3"><a href="">service</a>
+		
+		       <ul class="dropdown">
+		       	    <div class="d1">
+		            <li><a  href="">111</a></li>
+		            <li><a  href="">222</a></li>
+		            <li><a  href="">333</a></li>
+		            </li>
+                    </div>
+        </ul>
+        <li class="menu a4"><a href="">about us</a></li>
+
+
+
+
+
+    </ul>
+	</div>
+
+</body>
+</html>

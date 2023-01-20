@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> hover me </title>
+</head>
+<style type="text/css">
+	.parent
+	{
+		height: 50px;
+		width: 100px;
+		background: lightblue;
+		line-height: 50px;
+		margin: 100px auto;
+		text-align: center;
+		border-radius:  30px;
+		position: relative;
+		overflow: hidden;
+	}
+     .effect
+     {
+        height: 100px;
+        width: 200px;
+        background: linear-gradient(red,blue,green);
+        opacity: 0.80;
+        position: absolute;
+        top: 0;
+        left: -200%;
+        transition: 1s;
+
+     }
+
+     .parent:hover .effect
+     {
+
+     	left:0;
+
+     }
+
+</style>
+
+<body>
+        <div class="parent"> Hover me 
+        <div class="effect">
+        	
+        </div>
+ 
+        </div>
+    
+</body>
+</html>
